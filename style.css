@@ -35,6 +35,11 @@ hr {
     size: 30;
 }
 
+/* P */
+p {
+    font-size: 20px;
+}
+
 /* NAVIGATION */
 #Navigation {
     text-align: center;
@@ -54,8 +59,16 @@ hr {
     margin-bottom: 3%;
 }
 
+#About, #School, #Photography, #Contact, #Footer h1 {
+    margin-bottom: 5%;
+}
+
 #Headline h1 {
     font-family: 'Beth Ellen', cursive;
     text-transform: lowercase;
     font-size: 60px;
+}
+
+#Contact img {
+    width: 5%;
 }
