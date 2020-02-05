@@ -13,6 +13,7 @@ html {
     animation: fadein 2s;
     font-family: 'Quicksand', sans-serif;
     background-color: #f2f2f2;
+    scroll-behavior: smooth;
 }
 
 @keyframes fadein {
@@ -40,10 +41,21 @@ p {
     font-size: 20px;
 }
 
+/* A */
+a {
+    text-decoration: none;
+    color: black;
+    transition: font-weight .5s;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
 /* NAVIGATION */
 #Navigation {
     text-align: center;
-    height: 80px;
+    height: 90px;
     background-color: #ebe5dd;
     margin-bottom: 3%;
 }
@@ -51,6 +63,38 @@ p {
 #Navigation a {
     margin: 1.5%;
     padding-top: 1.5%;
+    font-size: 25px;
+}
+
+/* NAVIGATION EFFECT */
+.container {
+    position: absolute;
+}
+
+li {
+    display: inline-block;
+    margin-top: 1%;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 0 20px;
+}
+.cool-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
 
 /* DIVS */
@@ -61,6 +105,7 @@ p {
 
 #About, #School, #Photography, #Contact, #Footer h1 {
     margin-bottom: 5%;
+    font-size: 25px;
 }
 
 #Headline h1 {
@@ -70,5 +115,14 @@ p {
 }
 
 #Contact img {
-    width: 5%;
+    width: 4%;
+}
+
+#Photography img {
+    width: 15%;
+    transition: opacity .5s;
+}
+
+#Photography img:hover {
+    opacity: 0.7;
 }
